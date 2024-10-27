@@ -1,0 +1,248 @@
+body, h1, h2, h3, h4, h5, h6, ul, ol{
+    padding: 0; 
+    margin: 0;
+    font-family: sans-serif;
+} 
+
+p{
+    margin: 0;
+}
+
+/* Navbar */
+
+.header-nav{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;   
+    background-color: rgb(249, 249, 249);
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border-bottom: 2px solid #828181;
+}
+
+.nav-list-item-link{
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #347928;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+/* welcome screen */
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.welcome-ucol_icon{
+    background-color: #ffffff;
+    width: 450px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.welcome-bach-name{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.welcome-title{
+    margin-top: 50px;
+    width: 700px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 70px;
+}
+
+.row{
+    background-color: #347928;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 30px;
+    z-index: 1;
+}
+
+/* introducción */
+
+.introduction{
+    margin-top: 30px;
+    
+}
+
+.introduction-title{
+    text-align: center;
+    padding-top: 80px;
+}
+
+.introduction-goup-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.introduction-goup-1-p{
+    width: 450px;
+    text-align: justify;
+}
+
+.introduction-goup-1-img{
+    width: 400px;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+    object-fit: cover;
+}
+
+/* Grupo 2 */
+
+.introduction-goup-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introduction-goup-2-p{
+    width: 450px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.introduction-goup-2-images{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.introduction-goup-2-img{
+    background: rgb(255, 255, 255);
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.introduction-goup-2-p-ol{
+    list-style: disc;
+}
+
+/* Testimonios */
+
+.testimonio{
+    height: 100vh;
+}
+
+.testimonio-title{
+    margin-top: 70px;
+    text-align: center;
+}
+
+.testimonio{
+    width: 350px;
+    height: 500px;
+    background-color: #C0EBA6;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+.testimonio-img{
+    width: 100%;
+    height: 250px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+    mask-image: linear-gradient(black 90%, transparent);
+}
+
+.testimonio-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonio-p{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;     /* Número de líneas antes de truncar */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90%;
+    height: 114px;
+}
+
+.testimonio-ver-mas{
+    background-color: #347928;
+    color: #fff;
+    border-radius: 100px;
+    padding: 10px 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.testimonio-text-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonio-ver-mas{
+    margin-top: 30px;
+}
+
+.testimonio-title-card, .testimonio-p{
+    margin-left: 13px;
+    margin-right: 10px;
+}
+
+.testimonio-title-card{
+    margin-top: 10px;
+}
+
+.testimonio-p{
+    margin-top: 20px;
+}
+
+/* animación de entrada */
+
+@keyframes show {
+    from{
+        opacity: 0; scale: 10%;
+    }
+
+    to{
+        opacity: 1; scale: 100%;
+    }
+}
+
+.introduction img, .introduction p, .introduction ol, .introduction h2{
+    view-timeline: --reveal;
+
+    animation-name: show;
+    animation-fill-mode: both;
+
+    animation-timeline: --reveal;
+    animation-range: entry 25% cover 50%;
+}
