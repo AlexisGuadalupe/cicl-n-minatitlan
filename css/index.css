@@ -188,7 +188,7 @@ p{
     overflow: hidden;
     text-overflow: ellipsis;
     width: 90%;
-    height: 114px;
+    height: auto;
 }
 
 .testimonio-ver-mas{
@@ -245,4 +245,13 @@ p{
 
     animation-timeline: --reveal;
     animation-range: entry 25% cover 50%;
+}
+
+/* responssive */
+
+@media ( 500px <= width <= 900px) {
+    .introduction-goup-1{
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
 }
