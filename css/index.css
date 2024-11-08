@@ -285,3 +285,44 @@ p{
         width: 300px;
     }
 }
+
+/* responssive navbar */
+@media ( 10px <= width <= 600px) {
+    .nav-list-item-link{
+        font-size: 15px;
+    }
+}
+
+@media ( 10px <= width <= 500px) {
+    .nav-list-item-link{
+        font-size: 10px;
+    }
+}
+
+@media (10px <= width <= 460px) {
+    .introduction-goup-1-img{
+        width: 300px;
+        height: 200px;
+    }
+
+    .introduction-goup-2-img{
+        width: 300px;
+        height: 150px;
+    }
+}
+
+/* Footer */
+
+footer{
+    height: 100px;
+    margin-top: 20px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 25px;
+}

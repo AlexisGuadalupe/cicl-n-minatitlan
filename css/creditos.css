@@ -1,0 +1,55 @@
+body, h1, h2, h3, h4, h5, h6, ul, ol{
+    padding: 0; 
+    margin: 0;
+    font-family: sans-serif;
+} 
+
+p{
+    margin: 0;
+}
+
+
+/* Navbar */
+
+.header-nav{
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;   
+    background-color: rgb(249, 249, 249);
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border-bottom: 2px solid #828181;
+}
+
+.nav-list-item-link{
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #347928;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+/* creditos */
+
+.title{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.participante-continer{
+    width: 300px;
+    height: 400px;
+    background-color: #f00;
+    margin-top: 40px;
+}

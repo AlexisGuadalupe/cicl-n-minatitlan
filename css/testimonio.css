@@ -60,10 +60,41 @@ p{
 .article-p{
     width: 40%;
     font-size: 20px;
+    text-align: justify;
 }
 
 .name-and-image-container{
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+/* Responssive */
+
+@media ( 10px <= width <= 1000px) {
+    .article{
+        flex-direction: column-reverse;
+    }
+
+    .article-p{
+        width: 80%;
+    }
+
+    .image{
+        width: 400px;
+        height: 400px;
+    }
+}
+
+/* responssive navbar */
+@media ( 10px <= width <= 600px) {
+    .nav-list-item-link{
+        font-size: 15px;
+    }
+}
+
+@media ( 10px <= width <= 500px) {
+    .nav-list-item-link{
+        font-size: 10px;
+    }
 }
